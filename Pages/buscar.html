@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Búsqueda - Jair Uribe</title>
+</head>
+
+<body style="background-color: beige;">
+
+    <header>
+        <h1>Formulario de Búsqueda y Registro</h1>
+    </header>
+
+     <nav>
+        <a style="color: black; text-decoration: none"; href="../index.html">
+            - Home
+            <style></style>
+        </a> 
+        <p></p>
+        <a style="color: black; text-decoration: none";  href="../Pages/cto/contacto.html">
+            - Contacto
+        </a>
+        <p></p>
+        <a style="color: black; text-decoration: none;" 
+        href="../Pages/Universidad.html">- Universidad</a>
+        <p></p>
+        <a style="color: black; text-decoration: none";  href="../Pages/login.html">
+            - Login
+        </a>
+        <p></p>
+        <a style="color: black; text-decoration: none";  href="#copy">
+            - Copyright
+        </a> 
+                <p></p>
+        <a style="color: black; text-decoration: none";  href="../Pages/Intereses.html">
+            - Intereses
+        </a> 
+    </nav>
+    
+
+    <main>
+        <section>
+            <h2>Encuentra Contenido</h2>
+            <p>Rellena los siguientes campos para buscar información o suscribirte a las novedades.</p>
+
+            <form method="GET" action="buscar.html">
+
+                <div>
+                    <label>Tema a buscar:</label>
+                    <input type="text"; placeholder="Escribir tema"; name="tema"
+                    required maxlength="9" minlength="3" >
+
+                </div>
+                <p></p>
+                <div>
+                    <label>Edad:</label>
+                    <input type="number" name="edad" min="10" max="99">
+                </div>
+                <p></p>
+                <div>
+                    <label>Fecha de búsqueda:</label>
+                    <input type="date" name="fecha">
+                </div>
+                <p></p>
+                <div>
+                    <label>Contraseña de usuario:</label>
+                    <input type="password" name="clave">
+                </div>
+                <p></p>
+
+                <div>
+                    <label>Tu Correo:</label>
+                    <input type="email"; placeholder="Escribe Tu Correoooo"; name="correo">
+                </div>
+                <p></p>
+                <div>
+                    <p><strong>¿Qué te interesa ver?</strong></p>
+                    <input type="checkbox" name="interes[]" value="fortnite"> Fortnite
+                    <input type="checkbox" name="interes[]" value="dragonball"> Dragon Ball
+                    <input type="checkbox" name="interes[]" value="novelas"> Novelas
+                </div>
+                <p></p>
+
+                <div>
+                    <button type="submit">Realizar Búsqueda</button>
+                    <button type="reset">Borrar todo</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+    <section style="text-align: center;">
+        <iframe  width="300" height="300" 
+        src="https://es.wikipedia.org/wiki/Wikipedia:Portada"
+       title = "Música Exclusive"
+       frameboard = "1"
+       width="400px"
+       heigth = "400px"
+       allowfullscreen >    
+    </iframe>
+    <br>
+    <br>
+    <br>
+<iframe width="560" height="305" src="https://www.youtube-nocookie.com/embed/TBhJnVi56ng?si=Lnsjkv4bpV_zq2BX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
+    
+
+    <section id="copy">
+        <footer>
+            <h2>Copyright</h2>
+            <p>
+                &copy; jouribe@espe.edu.ec por JAIR URIBE;
+            </p>
+            <p>Clase de Fundamentos Web / HTML Semántico</p>
+        </footer>
+
+</body>
+
+</html>

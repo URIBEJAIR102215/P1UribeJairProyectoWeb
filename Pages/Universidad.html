@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Página Universitaria</title>
+</head>
+
+<body style="background-color: beige;">
+
+    <header style="text-align: center;">
+        <h1>Universidad de las Fuerzas Armadas ESPE</h1>
+    </header>
+
+   <nav>
+        <a style="color: black; text-decoration: none"; href="../index.html">
+            - Home
+            <style></style>
+        </a> 
+        <p></p>
+        <a style="color: black; text-decoration: none";  href="../Pages/cto/contacto.html">
+            - Contacto
+        </a>
+        <p></p>
+        <a style="color: black; text-decoration: none;" 
+        href="../Pages/login.html">- Login</a>
+        <p></p>
+        <a style="color: black; text-decoration: none";  href="#copy">
+            - Copyright
+        </a> 
+                <p></p>
+        <a style="color: black; text-decoration: none";  href="../Pages/Intereses.html">
+            - Intereses
+        </a> 
+    </nav>
+    
+
+
+    <main>
+
+        <section>
+            <h2>Información de mi Carrera</h2>
+            <p>
+                Actualmente estudio en la carrera de <strong>Tecnologías de la Información</strong>.
+                Estoy cursando materias de tercer y cuarto semestre.
+            </p>
+
+            <img src="../img/espe.png" alt="Logo de la ESPE" width="250">
+        </section>
+
+        <br>
+
+        <section>
+            <h2>Mi Horario Académico</h2>
+            <table border="1">
+                <tr>
+                    <th>Hora</th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miércoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                </tr>
+                <tr>
+                    <td>07:00 - 09:00</td>
+                    <td></td>
+                    <td>POO</td>
+                    <td></td>
+                    <td>Liderazgo</td>
+                    <td>Sistemas Operativos</td>
+                </tr>
+                <tr>
+                    <td>09:00 - 11:00</td>
+                    <td>Fundamentos Web</td>
+                    <td></td>
+                    <td>Poo</td>
+                    <td></td>
+                    <td>Fundamentos Web</td>
+                </tr>
+                <tr>
+                    <td>11:00 - 13:00</td>
+                    <td>Redes </td>
+                    <td></td>
+                    <td></td>
+                    <td>Modelos Discretos</td>
+                    <td></td>
+                </tr>
+            </table>
+        </section>
+
+        <br>
+
+        <section>
+            <h2>Compañeros y Diversión</h2>
+            <p>
+                Mis amigos de la universidad. 
+                Nos gusta mucho jugar Fortnite en nuestros ratos libres.
+            </p>
+
+            <figure style="text-align: center">
+                <img src="../img/amigues.jpeg" alt="Mis Amigos" width="300">
+                <figcaption>Foto con mis amigos de la carrera</figcaption>
+            </figure>
+            <br>
+        </section>
+    <br>
+    </main>
+   
+    <section style="text-align: center; margin: 2rem 0;">
+  <h2 style="font-weight: bold;">FORMULARIO SOLICITUD TUTORÍA</h2>
+
+  <form action=" " method="GET" style="text-align: center;">
+
+    <label>Departamento:</label>
+    <input type="text" name="materia" placeholder="Ingrese el nombre de departamento que pertenece" required>
+    <br><br>
+
+    <label>Fecha:</label>
+    <input type="date" name="fecha" required>
+    <br><br>
+
+    <label>Número de estudiantes:</label>
+    <input type="number" name="estudiantes" min="1" required>
+    <br><br>
+
+    <label for="asignatura">Asignatura a buscar:</label>
+    <select name="asignatura" id="asignatura" required>
+      <option value="" disabled selected>Selecciona</option>
+      <option value="programacion">Programación</option>
+      <option value="quimica">Química</option>
+      <option value="poo">POO</option>
+      <option value="ingles">Inglés</option>
+      <option value="fisica">Física</option>
+    </select>
+    <br><br>
+
+    <label for="hora">Hora:</label>
+    <input type="time" name="hora" id="hora"
+           min="08:00" max="17:00" step="3600" required>
+    <br><br>
+
+    <input type="submit" value="Guardar y Buscar">
+    <input type="reset" value="Limpiar">
+
+  </form>
+</section>
+
+     <section id="copy">
+        <footer>
+            <h2>Copyright</h2>
+            <p>&copy; jouribe@espe.edu.ec por JAIR URIBE</p>
+            <p>Clase de Fundamentos Web - HTML Semántico</p>
+        </footer>
+    </section>
+
+</body>
+
+</html>
