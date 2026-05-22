@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PetPals - Iniciar Sesión</title>
+        <link rel="icon" href="img/salud.ico" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  </head>
+
+  <body
+    style="
+      background-color: #f8f9ff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #121c28;
+    "
+  >
+    <header
+      style="
+        background-color: #00666d;
+        color: white;
+        text-align: center;
+        padding: 25px 15px;
+      "
+    >
+      <h1 style="margin: 0; font-size: 28px"></i> PetPals</h1>
+      <p style="margin: 5px 0 0 0; opacity: 0.9; font-size: 14px">
+        Plataforma de gestión de mascotas y citas veterinarias
+      </p>
+    </header>
+
+    <main style="max-width: 450px; margin: 40px auto; padding: 0 20px">
+      <section>
+        <h2
+          style="
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 25px;
+            font-size: 24px;
+            color: #121c28;
+          "
+        >
+          Iniciar Sesión
+        </h2>
+
+        <form
+          onsubmit="
+            this.action = document.querySelector(
+              'input[name=\'rol\']:checked',
+            ).value
+          "
+          method="post"
+        >
+          <p
+            style="
+              margin: 0 0 10px 0;
+              font-weight: bold;
+              font-size: 14px;
+              color: #475569;
+            "
+          >
+            Selecciona tu rol:
+          </p>
+
+          <div
+            style="
+              background-color: #f1f5f9;
+              padding: 12px;
+              border-radius: 12px;
+              margin-bottom: 20px;
+            "
+          >
+            <table style="width: 100%">
+              <tr>
+                <td style="width: 50%">
+                  <label
+                    style="cursor: pointer; display: block; font-size: 14px"
+                  >
+                    <input
+                      type="radio"
+                      name="col"
+                      name="rol"
+                      value="VistaUsuario.html"
+                      checked
+                      style="accent-color: #00666d"
+                    />
+        <i class="fa-solid fa-dog fa-lg"></i> Dueño
+                  </label>
+                </td>
+                <td style="width: 50%">
+                  <label
+                    style="cursor: pointer; display: block; font-size: 14px"
+                  >
+                    <input
+                      type="radio"
+                      name="rol"
+                      value="VistaVeterinario.html"
+                      style="accent-color: #00666d"
+                    />
+                    <i class="fa-solid fa-heart"></i> Veterinario
+                  </label>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <label
+            for="email"
+            style="font-weight: bold; font-size: 14px; color: #475569"
+            ><i class="fa-solid fa-envelope"></i> Correo electrónico</label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="ejemplo@correo.com"
+            required
+            style="
+              width: 100%;
+              padding: 12px;
+              margin: 6px 0 20px 0;
+              border: 1px solid #cbd5e1;
+              border-radius: 10px;
+              box-sizing: border-box;
+              font-size: 15px;
+            "
+          />
+
+          <label
+            for="password"
+            style="font-weight: bold; font-size: 14px; color: #475569"
+            ><i class="fa-solid fa-user"></i> Contraseña</label
+          >
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="••••••••"
+            required
+            style="
+              width: 100%;
+              padding: 12px;
+              margin: 6px 0 25px 0;
+              border: 1px solid #cbd5e1;
+              border-radius: 10px;
+              box-sizing: border-box;
+              font-size: 15px;
+            "
+          />
+
+          <input
+            type="submit"
+            value="Ingresar al Sistema"
+            style="
+              width: 100%;
+              padding: 14px;
+              background-color: #00666d;
+              color: white;
+              border: none;
+              border-radius: 10px;
+              cursor: pointer;
+              font-size: 16px;
+              font-weight: bold;
+            "
+          />
+        </form>
+      </section>
+    </main>
+
+    <footer
+      style="
+        background-color: #00666d;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 20px;
+      "
+    >
+      <p>&copy; PetPals 2025 - Proyecto Fundamentos Web</p>
+      <p>Universidad de las Fuerzas Armadas ESPE</p>
+      <i class="fa-solid fa-dog fa-xs"></i> Perro pequeño
+        <br>
+
+        <i class="fa-solid fa-dog fa-sm"></i> Perro mediano pequeño
+        <br>
+
+        <i class="fa-solid fa-dog fa-lg"></i> Perro grande
+        <br>
+
+        <i class="fa-solid fa-dog fa-2x"></i> Perro 2 veces más grande
+        <br>
+
+        <i class="fa-solid fa-dog fa-3x"></i> Perro 3 veces más grande
+        <br>
+
+        <i class="fa-solid fa-dog fa-5x"></i> Perro 5 veces más grande
+      </footer>
+  </body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetPals - Mi Panel</title>
+        <link rel="icon" href="img/salud.ico">
+
+</head>
+
+<body style="background-color: #f0f4f8; font-family: Arial, sans-serif;">
+
+    <!-- ENCABEZADO -->
+    <header style="background-color: #00666d; color: white; text-align: center; padding: 20px;">
+        <h1>🐾 PetPals</h1>
+        <p>Panel del Dueño de Mascota</p>
+    </header>
+
+    <!-- NAVEGACIÓN -->
+    <nav style="background-color: #004f54; padding: 10px; text-align: center;">
+        <a href="#mis-mascotas" style="color: white; text-decoration: none; margin: 0 15px;">- Mis Mascotas</a>
+        <a href="#citas"        style="color: white; text-decoration: none; margin: 0 15px;">- Citas</a>
+        <a href="#historial"   style="color: white; text-decoration: none; margin: 0 15px;">- Historial Médico</a>
+        <a href="login.html"   style="color: white; text-decoration: none; margin: 0 15px;">- Cerrar Sesión</a>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main style="max-width: 800px; margin: 30px auto; padding: 0 20px;">
+
+        <!-- Bienvenida -->
+        <h2>👋 ¡Hola, Alex!</h2>
+        <p>Bienvenido de vuelta a tu panel. Aquí puedes gestionar todo lo relacionado con tus mascotas.</p>
+        <p><strong>Resumen rápido:</strong></p>
+        <ul>
+            <li>🐶 Tienes <strong>2 mascotas</strong> registradas</li>
+            <li>📅 Tu próxima cita es el <strong>6 de junio de 2025</strong></li>
+            <li>⚠️ Luna tiene <strong>vacunas pendientes</strong></li>
+        </ul>
+
+        <!-- Botón agendar -->
+        <p style="text-align: center;">
+            <a href="#citas">
+                <button style="padding: 12px 30px; background-color: #00666d; color: white; border: none; font-size: 16px; cursor: pointer;">
+                    📅 Agendar Nueva Cita
+                </button>
+            </a>
+        </p>
+
+        <hr>
+
+        <!-- MIS MASCOTAS -->
+        <h2 id="mis-mascotas">🐾 Mis Mascotas</h2>
+
+        <h3>🐶 Buddy</h3>
+        <table border="0">
+            <tr>
+                <td><strong>Raza:</strong></td>
+                <td>Golden Retriever</td>
+            </tr>
+            <tr>
+                <td><strong>Edad:</strong></td>
+                <td>3 años</td>
+            </tr>
+            <tr>
+                <td><strong>Estado:</strong></td>
+                <td style="color: green;"><strong>✅ Saludable</strong></td>
+            </tr>
+        </table>
+        <p><a href="#historial" style="color: #00666d;">Ver historial médico →</a></p>
+
+        <h3>🐱 Luna</h3>
+        <table border="0">
+            <tr>
+                <td><strong>Raza:</strong></td>
+                <td>British Shorthair</td>
+            </tr>
+            <tr>
+                <td><strong>Edad:</strong></td>
+                <td>5 años</td>
+            </tr>
+            <tr>
+                <td><strong>Estado:</strong></td>
+                <td style="color: orange;"><strong>⚠️ Vacunas Pendientes</strong></td>
+            </tr>
+        </table>
+        <p><a href="#historial" style="color: #00666d;">Ver historial médico →</a></p>
+
+        <hr>
+
+        <!-- AGENDAR CITA -->
+        <h2 id="citas">📅 Agendar Nueva Cita</h2>
+
+        <form action="#" method="GET">
+
+            <label for="mascota-cita">Selecciona tu mascota:</label><br>
+            <select id="mascota-cita" name="mascota" required
+                style="width: 100%; padding: 8px; margin: 5px 0 15px 0;">
+                <option value="" disabled selected>Selecciona una mascota</option>
+                <option value="buddy">🐶 Buddy - Golden Retriever</option>
+                <option value="luna">🐱 Luna - British Shorthair</option>
+            </select>
+            <br>
+
+            <label for="motivo-cita">Motivo de la consulta:</label><br>
+            <select id="motivo-cita" name="motivo" required
+                style="width: 100%; padding: 8px; margin: 5px 0 15px 0;">
+                <option value="" disabled selected>Selecciona el motivo</option>
+                <option value="chequeo">Chequeo general</option>
+                <option value="vacuna">Vacunación</option>
+                <option value="cirugia">Cirugía</option>
+                <option value="emergencia">Emergencia</option>
+                <option value="otro">Otro</option>
+            </select>
+            <br>
+
+            <label for="fecha-cita">Fecha de la cita:</label><br>
+            <input type="date" id="fecha-cita" name="fecha" required
+                style="width: 100%; padding: 8px; margin: 5px 0 15px 0; box-sizing: border-box;">
+            <br>
+
+            <label for="hora-cita">Hora disponible:</label><br>
+            <select id="hora-cita" name="hora" required
+                style="width: 100%; padding: 8px; margin: 5px 0 15px 0;">
+                <option value="" disabled selected>Selecciona una hora</option>
+                <option value="09:00">09:00 AM</option>
+                <option value="11:30">11:30 AM</option>
+                <option value="14:00">02:00 PM</option>
+                <option value="16:45">04:45 PM</option>
+            </select>
+            <br>
+
+            <label for="notas-cita">Notas adicionales:</label><br>
+            <textarea id="notas-cita" name="notas" rows="3"
+                placeholder="Describe los síntomas u observaciones..."
+                style="width: 100%; padding: 8px; margin: 5px 0 15px 0; box-sizing: border-box;"></textarea>
+            <br>
+
+            <input type="submit" value="Confirmar Cita"
+                style="padding: 10px 25px; background-color: #00666d; color: white; border: none; cursor: pointer; font-size: 14px;">
+
+        </form>
+
+        <hr>
+
+        <!-- HISTORIAL MÉDICO -->
+        <h2 id="historial">📋 Historial Médico Reciente</h2>
+
+        <table border="1" style="width: 100%; border-collapse: collapse;">
+            <thead style="background-color: #00666d; color: white;">
+                <tr>
+                    <th style="padding: 8px;">Fecha</th>
+                    <th style="padding: 8px;">Mascota</th>
+                    <th style="padding: 8px;">Tipo de Consulta</th>
+                    <th style="padding: 8px;">Veterinario</th>
+                    <th style="padding: 8px;">Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 8px; text-align: center;">12/10/2023</td>
+                    <td style="padding: 8px; text-align: center;">🐶 Buddy</td>
+                    <td style="padding: 8px; text-align: center;">Vacunación</td>
+                    <td style="padding: 8px; text-align: center;">Dra. Elena Rostova</td>
+                    <td style="padding: 8px; text-align: center; color: green;"><strong>✅ Completado</strong></td>
+                </tr>
+                <tr style="background-color: #d9e3f4;">
+                    <td style="padding: 8px; text-align: center;">24/08/2023</td>
+                    <td style="padding: 8px; text-align: center;">🐱 Luna</td>
+                    <td style="padding: 8px; text-align: center;">Chequeo General</td>
+                    <td style="padding: 8px; text-align: center;">Dr. Marcos Vidal</td>
+                    <td style="padding: 8px; text-align: center; color: green;"><strong>✅ Completado</strong></td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; text-align: center;">06/06/2025</td>
+                    <td style="padding: 8px; text-align: center;">🐱 Luna</td>
+                    <td style="padding: 8px; text-align: center;">Vacunación</td>
+                    <td style="padding: 8px; text-align: center;">Dra. Elena Rostova</td>
+                    <td style="padding: 8px; text-align: center; color: orange;"><strong>⏳ Pendiente</strong></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+
+    </main>
+
+    <footer style="background-color: #00666d; color: white; text-align: center; padding: 15px; margin-top: 20px;">
+        <p>&copy; PetPals 2025 - Proyecto Fundamentos Web</p>
+        <p>Universidad de las Fuerzas Armadas ESPE</p>
+    </footer>
+
+</body>
+</html>

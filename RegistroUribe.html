@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetPals - Registro</title>
+        <link rel="icon" href="img/salud.ico">
+
+</head>
+
+<body style="background-color: #f8f9ff; font-family: Arial, sans-serif; margin: 0; padding: 0; color: #121c28;">
+
+    <header style="background-color: #00666d; color: white; text-align: center; padding: 25px 15px;">
+        <h1 style="margin: 0; font-size: 28px;">🐾 PetPals</h1>
+        <p style="margin: 5px 0 0 0; opacity: 0.9; font-size: 14px;">Plataforma de gestión de mascotas y citas veterinarias</p>
+    </header>
+
+    <nav style="background-color: #004f54; padding: 12px; text-align: center;">
+        <a href="ContactoUribe.html" style="color: white; text-decoration: none; margin: 0 15px;">- Información Contacto</a>
+        <a href="VistaVeterinario.html" style="color: white; text-decoration: none; margin: 0 15px;">- Vista Veterinario</a>
+        <a href="VistaUsuario.html" style="color: white; text-decoration: none; margin: 0 15px;">- Vista Usuario</a>
+        <a href="LoginUribe.html" style="color: white; text-decoration: none; margin: 0 15px;">- Iniciar Sesión / Regresar</a>
+    </nav>
+
+    <main style="max-width: 500px; margin: 30px auto; padding: 0 20px;">
+        
+        <section style="background-color: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+            <h2 style="text-align: center; margin-top: 0; color: #121c28;">Crear Cuenta</h2>
+            <p style="text-align: center; color: #64748b; font-size: 14px; margin-bottom: 20px;">Completa el formulario para registrarte en la plataforma</p>
+
+            <form action="LoginUribe.html" method="GET">
+                <fieldset style="border: 1px solid #cbd5e1; border-radius: 8px; padding: 15px 20px;">
+                    <legend style="font-weight: bold; color: #00666d; padding: 0 10px;">Datos Personales</legend>
+
+                    <label for="nombres" style="font-weight: bold; font-size: 14px; color: #475569;">Nombres:</label><br>
+                    <input type="text" id="nombres" name="nombres" placeholder="Ingresa tus nombres" required 
+                           style="width: 100%; padding: 10px; margin: 6px 0 15px 0; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box;"><br>
+
+                    <label for="apellidos" style="font-weight: bold; font-size: 14px; color: #475569;">Apellidos:</label><br>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Ingresa tus apellidos" required 
+                           style="width: 100%; padding: 10px; margin: 6px 0 15px 0; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box;"><br>
+
+                    <label for="cedula" style="font-weight: bold; font-size: 14px; color: #475569;">Cédula:</label><br>
+                    <input type="text" id="cedula" name="cedula" placeholder="Ingresa tu número de cédula" maxlength="10" required 
+                           style="width: 100%; padding: 10px; margin: 6px 0 15px 0; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box;"><br>
+
+                    <label for="fecha-nacimiento" style="font-weight: bold; font-size: 14px; color: #475569;">Fecha de nacimiento:</label><br>
+                    <input type="date" id="fecha-nacimiento" name="fecha_nacimiento" required 
+                           style="width: 100%; padding: 10px; margin: 6px 0 15px 0; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box;"><br>
+
+                    <label for="genero" style="font-weight: bold; font-size: 14px; color: #475569;">Género:</label><br>
+                    <select id="genero" name="genero" required style="width: 100%; padding: 10px; margin: 6px 0 15px 0; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box;">
+                        <option value="" disabled selected>Selecciona tu género</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                    </select><br>
+
+                    <label for="email" style="font-weight: bold; font-size: 14px; color: #475569;">Correo electrónico:</label><br>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required 
+                           style="width: 100%; padding: 10px; margin: 6px 0 15px 0; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box;"><br>
+
+                    <label for="password" style="font-weight: bold; font-size: 14px; color: #475569;">Contraseña:</label><br>
+                    <input type="password" id="password" name="password" placeholder="Mínimo 8 caracteres" minlength="8" maxlength="16" required 
+                           style="width: 100%; padding: 10px; margin: 6px 0 20px 0; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box;"><br>
+
+                    <table style="width: 100%;">
+                        <tr>
+                            <td style="width: 50%; padding-right: 5px;">
+                                <button type="reset" style="width: 100%; padding: 12px; background-color: #cbd5e1; color: #334155; border: none; border-radius: 6px; cursor: pointer; font-weight: bold;">Limpiar</button>
+                            </td>
+                            <td style="width: 50%; padding-left: 5px;">
+                                <input type="submit" value="Registrarme →" style="width: 100%; padding: 12px; background-color: #00666d; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: bold;">
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+    <footer style="background-color: #00666d; color: white; text-align: center; padding: 15px; margin-top: 30px;">
+        <p style="margin: 0 0 5px 0;">&copy; PetPals 2026 - Proyecto Fundamentos Web</p>
+        <p style="margin: 0; font-size: 13px;">Universidad de las Fuerzas Armadas ESPE</p>
+    </footer>
+
+</body>
+</html>
